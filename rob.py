@@ -12,7 +12,7 @@ def listen_and_respond(after_prompt=True):
 
 	
 	chat_log=[
-    		{"role": "system", "content": "Your name is Rob. You are a robotic dog assistant, who can sniff and detect smells, such as coffee and tea. you are also an assitant and can answer questions. "
+    		{"role": "system", "content": "Your name is Rob. You are a robotic dog assistant, who can sniff and detect smells, such as coffee and tea. you are also an assitant and can answer questions. "}
 	GPT_model = "gpt-4"
 	#openai.api_key = "MY_AI_KEY"
 	client = OpenAI(api_key=os.environ["API_KEY"])
