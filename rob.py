@@ -23,11 +23,11 @@ def listen_and_respond(after_prompt=True):
 
 		if after_prompt:
 			recognizer.adjust_for_ambient_noise(source)
-			print("Say 'Dave' to start")
+			print("Say 'Rob' to start")
 			audio = recognizer.listen(source, phrase_time_limit=5)
 			try:
 				transcription = recognizer.recognize_google(audio)
-				if transcription.lower() == "dave":
+				if transcription.lower() == "rob":
 					start_listening = True
 				else:
 					start_listening = False
